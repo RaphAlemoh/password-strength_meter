@@ -44,7 +44,7 @@ class PasswordInput extends Component {
 
         return (
         <Container>
-            <Row>
+            <Row className="mt-4">
                 <Col md={8}>
                     <PasswordField password={password}
                     onPasswordChange={this.changePassword} 
