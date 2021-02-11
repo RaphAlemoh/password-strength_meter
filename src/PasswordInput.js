@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import PasswordField from './PasswordField';
 import StrengthMeter from './StrengthMeter';
 
-class PasswordInput extends React.Component {
+class PasswordInput extends Component {
     constructor(props) {
         super(props);
         
@@ -41,7 +41,6 @@ class PasswordInput extends React.Component {
 
         let { goodPasswordPrinciples } = PasswordInput.defaultProps;
         let { password } = this.state;
-        
 
         return (
         <Container>

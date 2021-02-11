@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classNames from 'classnames';
 
-export default class PrincipleList extends React.Component {
+export default class PrincipleList extends Component {
     principleSatisfied(principle) {
         let { password } = this.props;
         return principle.predicate(password);

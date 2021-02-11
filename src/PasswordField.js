@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Form } from 'react-bootstrap';
 import classNames from 'classnames';
 
-class PasswordField extends React.Component {
+class PasswordField extends Component {
     constructor(props) {
         super(props);
         this.handlePasswordChange = this.handlePasswordChange.bind(this);
@@ -39,11 +39,10 @@ class PasswordField extends React.Component {
                     <Form.Label>Password</Form.Label>
                     <Form.Control 
                         type='password' 
-                        label='Password' 
                         value={password}
                         bsstyle={this.inputColor()}
                         onChange={this.handlePasswordChange}
-                        hasfeedback />                       
+                        hasfeedback='true' />                       
                 </Form.Group>
             </Form>
         );        

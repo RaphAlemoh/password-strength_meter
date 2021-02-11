@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Card } from 'react-bootstrap';
 import PrinciplesProgress from './PrinciplesProgress';
 import PrinciplesList from './PrinciplesList';
 
 
-export default class StrengthMeter extends React.Component {
+export default class StrengthMeter extends Component {
      render() {
         return(
             <Card>

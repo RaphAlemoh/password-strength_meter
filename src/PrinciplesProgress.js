@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ProgressBar } from 'react-bootstrap';
 import classNames from 'classnames';
 
 
-class PrinciplesProgress extends React.Component {
+class PrinciplesProgress extends Component {
     satisfiedPercent() {
         let { principles, password } = this.props;
         let satisfiedCount = 
